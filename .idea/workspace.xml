@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a73bb16f-e8a1-4824-ad3a-60d0c27dcf1b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ClassifierShell.java" afterPath="$PROJECT_DIR$/src/main/java/ClassifierShell.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ClassifierShell.class" afterPath="$PROJECT_DIR$/target/classes/ClassifierShell.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cs450.iws" />
@@ -72,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -508,7 +508,13 @@
       <option name="project" value="LOCAL" />
       <updated>1430606910288</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Weka KNN implemetation.">
+      <created>1430609254800</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1430609254800</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -560,7 +566,8 @@
     <MESSAGE value="change everything" />
     <MESSAGE value="The classiferShell doesn't seem to be reacting propoerly to KNN.&#10;&#10;KNN is uploaded." />
     <MESSAGE value="The classiferShell doesn't seem to be reacting properly to KNN.&#10;&#10;KNN is uploaded." />
-    <option name="LAST_COMMIT_MESSAGE" value="The classiferShell doesn't seem to be reacting properly to KNN.&#10;&#10;KNN is uploaded." />
+    <MESSAGE value="Added Weka KNN implemetation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Weka KNN implemetation." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -924,7 +931,7 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
           <folding />
         </state>
       </provider>

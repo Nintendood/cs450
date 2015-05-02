@@ -1,4 +1,6 @@
 import weka.classifiers.Evaluation;
+import weka.classifiers.Classifier;
+import weka.classifiers.lazy.IBk;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
@@ -15,14 +17,15 @@ public class ClassifierShell {
 
         int trainSize = (int) Math.round(dataSet.numInstances() * .7);
         int testSize = dataSet.numInstances() - trainSize;
+
         Instances train = new Instances(dataSet, 0, trainSize);
         Instances test = new Instances(dataSet, trainSize, testSize);
 
-        HardCodedClassifier hcc = new HardCodedClassifier();
-        hcc.buildClassifier(train);
+        KNN classifier = new KNN(3);
+        classifier.buildClassifier(train);
 
         Evaluation eval = new Evaluation(train);
-        eval.evaluateModel(hcc, test);
+        eval.evaluateModel(classifier, test);
         System.out.println(eval.toSummaryString("\nResults\n", true));
 
 

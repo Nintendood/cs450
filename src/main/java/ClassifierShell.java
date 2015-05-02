@@ -21,8 +21,13 @@ public class ClassifierShell {
         Instances train = new Instances(dataSet, 0, trainSize);
         Instances test = new Instances(dataSet, trainSize, testSize);
 
-        KNN classifier = new KNN(3);
+        //My home-grown KNN algorithm
+        KNN classifier = new KNN(15);
         classifier.buildClassifier(train);
+
+        //Weka's KNN Algorithm
+        //Classifier classifier = new IBk(15);
+        //classifier.buildClassifier(train);
 
         Evaluation eval = new Evaluation(train);
         eval.evaluateModel(classifier, test);

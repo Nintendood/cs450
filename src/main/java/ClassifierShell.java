@@ -8,6 +8,7 @@ import weka.filters.unsupervised.attribute.Standardize;
 import weka.filters.Filter;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
+import weka.classifiers.functions.MultilayerPerceptron;
 
 import java.util.Random;
 
@@ -23,6 +24,7 @@ public class ClassifierShell {
         stand.setInputFormat(dataSetPre);
 
         Discretize discretize = new Discretize();
+        MultilayerPerceptron mlp = new MultilayerPerceptron();
         discretize.setInputFormat(dataSetPre);
 
         NumericToNominal ntb = new NumericToNominal();
@@ -37,6 +39,8 @@ public class ClassifierShell {
         dataSet.randomize(new Random(9001));
 
         Classifier classify = new NNC(3, 20001, 0.1);
+        //Classifier classify = mlp;
+
         Evaluation eval = new Evaluation(dataSet);
 
         int trainingSize = (int) Math.round(dataSet.numInstances() * .7);

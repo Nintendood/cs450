@@ -195,7 +195,7 @@ public class ID3 extends Classifier {
         printTree(tree, 0, 0.0);
     }
 
-    //iterates through the tree ande returns the slected classification
+    //iterates through the tree ande returns the selected classification
     public double getClassification(Instance instance, Node n) {
         if (n.isLeaf()) {
             return n.leafValue;
